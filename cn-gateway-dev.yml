@@ -17,13 +17,13 @@ zuul:
       path: /biz/**
       serviceId: biz-service
   host:
-    connect-timeout-millis: 10000
-    socket-timeout-millis: 10000
+    connect-timeout-millis: 30000
+    socket-timeout-millis: 30000
 
 #ribbon的请求时间必须要设置，因为zuul路由用的是ribbon
 ribbon:
   ReadTimeout:  30000
-  ConnectTimeout:  15000
+  ConnectTimeout:  30000
 #熔断器
 hystrix:
   command:
@@ -31,7 +31,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 8000
+            timeoutInMilliseconds: 30000
 
 order-service:
   ribbon:
