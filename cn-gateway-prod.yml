@@ -19,7 +19,20 @@ zuul:
   host:
     connect-timeout-millis: 10000
     socket-timeout-millis: 10000
- 
+
+#ribbon的请求时间必须要设置，因为zuul路由用的是ribbon
+ribbon:
+  ReadTimeout:  30000
+  ConnectTimeout:  15000
+#熔断器
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 8000
+
 order-service:
   ribbon:
     ReadTimeout: 10000
