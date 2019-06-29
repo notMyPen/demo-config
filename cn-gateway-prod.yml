@@ -33,3 +33,9 @@ biz-service:
     ReadTimeout: 10000
     ConnectTimeout: 10000
 
+spring:
+  rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest

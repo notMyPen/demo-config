@@ -26,4 +26,11 @@ hystrix:
             #一般可以将hystrix的超时时间设置的比feign的超时时间长一些，否则feign的重试(如果配置了)将会失效
             timeoutInMilliseconds: 8000
 
+spring:
+  rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
+
 test-string: 1212324如他gorder
