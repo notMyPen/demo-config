@@ -33,4 +33,4 @@ spring:
       username: guest
       password: guest
 
-test-string: 1212324如他
+test-string: 改后的biz

@@ -39,3 +39,5 @@ spring:
       port: 5672
       username: guest
       password: guest
+
+test-string: 改后的gateway
