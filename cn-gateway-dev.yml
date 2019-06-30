@@ -1,1 +1,11 @@
+spring:
+  #连接到sleuth-zipkin链路追踪
+  zipkin:
+    #zipkin不能注册到eureka中，所以这里只能硬编码url
+    base-url: http://localhost:8865
+  sleuth:
+    sampler:
+        #这个是收集比例，1表示100%shouji ,全部收集
+        percentage: 1
+
 test-string: 改后的gateway333334444555566667777
