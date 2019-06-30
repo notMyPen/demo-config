@@ -22,8 +22,8 @@ zuul:
 
 #ribbon的请求时间必须要设置，因为zuul路由用的是ribbon
 ribbon:
-  ReadTimeout:  30000
-  ConnectTimeout:  30000
+  ReadTimeout:  20000
+  ConnectTimeout:  20000
 #熔断器
 hystrix:
   command:
@@ -31,7 +31,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 30000
+            timeoutInMilliseconds: 20000
 
 order-service:
   ribbon:
