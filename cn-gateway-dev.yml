@@ -31,7 +31,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 30000
+            timeoutInMilliseconds: 50000
 
 order-service:
   ribbon:
